@@ -1,4 +1,4 @@
-# Factor와 Offset 강의 요약
+# Factor와 Offset
 
 ## 1. 문제 상황 - 실수형 데이터 전송의 한계
 

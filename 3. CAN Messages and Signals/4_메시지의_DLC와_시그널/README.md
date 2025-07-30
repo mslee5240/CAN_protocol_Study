@@ -1,4 +1,4 @@
-# 시그널과 Data Length Code 강의 요약
+# 시그널과 Data Length Code
 
 ## 1. 시그널(Signal)의 개념
 
