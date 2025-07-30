@@ -12,6 +12,8 @@
 - 메시지를 받아도 **누가 보냈는지, 어떤 내용인지 알 수 없음**
 - 메시지 해석이 불가능한 상황 발생
 
+<br>
+
 ## 2. CAN 메시지 ID의 역할
 
 ### ID 필드의 위치
@@ -23,6 +25,8 @@
 - 메시지 식별을 위한 **고유 번호**
 - 송신자와 메시지 내용을 간접적으로 식별
 - 메시지 우선순위 결정에도 활용
+
+<br>
 
 ## 3. CAN DB (데이터베이스)
 
@@ -47,6 +51,8 @@ ID: 0x500 | Name: Engine Status   | TX: Engine | RX: BMS, Airbag
 ID: 0x507 | Name: Airbag Status   | TX: Airbag| RX: Engine
 ```
 
+<br>
+
 ## 4. 메시지 송수신 구현
 
 ### 송신 측 구현
@@ -60,6 +66,8 @@ ID: 0x507 | Name: Airbag Status   | TX: Airbag| RX: Engine
 2. CAN DB에서 해당 ID의 메시지 정보 검색
 3. 송신자와 데이터 의미 파악
 4. 데이터 해석 및 활용
+
+<br>
 
 ## 5. 중요한 규칙과 제약사항
 
@@ -78,6 +86,8 @@ ID: 0x507 | Name: Airbag Status   | TX: Airbag| RX: Engine
 - 소프트웨어적으로는 다른 ID 송신 가능
 - 하지만 약속을 지켜야 정상적인 통신 가능
 
+<br>
+
 ## 6. 실제 활용 사례
 
 ### 개발 과정에서의 활용
@@ -89,6 +99,8 @@ ID: 0x507 | Name: Airbag Status   | TX: Airbag| RX: Engine
 - 리시버 목록은 **참고 정보**일 뿐
 - 브로드캐스트 특성상 모든 제어기가 수신 가능
 - 실제로는 필요한 메시지만 선별적으로 활용
+
+<br>
 
 ## 7. CAN 메시지 ID 포맷
 
@@ -103,6 +115,8 @@ ID: 0x507 | Name: Airbag Status   | TX: Airbag| RX: Engine
 - 네트워크별로 필요에 따라 선택
 - 대부분의 경우 Standard 포맷으로 충분
 
+<br>
+
 ## 8. K-Matrix 명칭의 유래
 
 ### 독일어 기원
@@ -110,6 +124,8 @@ ID: 0x507 | Name: Airbag Status   | TX: Airbag| RX: Engine
 - 첫 글자 'K'에서 **K-Matrix** 명칭 유래
 - 독일 자동차 회사들의 표준이 국제 표준화
 - 자동차 업계의 독일어 용어 다수 존재
+
+<br>
 
 ## 9. 핵심 정리
 
