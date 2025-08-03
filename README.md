@@ -1,4 +1,4 @@
-# CAN 통신
+# CAN Protocol Study
 
 ## CAN 통신 개요
 
